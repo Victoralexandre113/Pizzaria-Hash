@@ -1,0 +1,95 @@
+/*Importa a fonte "Roboto" do Google fonts em diversos estilos e pesos*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Defini variáveis globais para cores e bordas, facilitando a manutenção e ajustes futuros*/
+:root{
+    --main-text-decoration-color: #da190f;
+    --bg:#13131a;
+    --br-card:#0c0c14;
+    --border: 0.1rem solid grey;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/**/
+    font-family: 'Roboto', 'sans-serif';
+    text-decoration: none;
+    text-transform: capitalize; /**/
+    transition: 0.2s linear; /**/
+    outline: none;/**/
+    border: none;/*retirando todas as bordas*/
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%; /*Configuração do Font-Size para 62.5%, facilitando o uso do REM (1rem = 10px)*/
+    overflow-x: hidden; /**/
+}
+
+body{
+    background: var(--bg);
+}
+
+header{
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%; /**/
+    border-bottom: var(--border); /*borda inferior*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+
+}
+
+
+
+.logo img{
+    height: 6.5rem; /*define a altura da logo*/
+    border-radius: 100%; /*torna a logo circular*/
+
+}
+
+
+.ul-header{
+    display: flex;
+    gap: 15px;
+}
+
+.ul-header li{
+    list-style: none;
+}
+
+.ul-header li a{
+color: #fff;
+font-size: 1.6rem;
+}
+
+.ul-header li a:hover{
+    color: var(--main-text-decoration-color);
+    border-bottom: 0.1rem solid var(--main-text-decoration-color); /*adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem; /*Adiciona espaçamento inferior no hover*/
+}
+
+.Icons{ /*Não estou mexendo nos icones, e sim na caixa*/
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.Icons i{
+    color:white;/*cor branca para icones*/
+    cursor: pointer; /*Altera o cursor ao passar sobre o icone*/
+    font-size: 2.5rem; /*tamanho do incones*/
+}
+
+.Icons i:hover{
+    color: var(--main-text-decoration-color); /*muda a cor do icone ao passar o mouse*/
+}
+
