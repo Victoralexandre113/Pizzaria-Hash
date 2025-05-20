@@ -139,14 +139,73 @@ font-size: 1.6rem;
     z-index: 1;
 }
 
+section{
+    padding: 2rem 7%; /*garante espaçamento interno nas sessões (responsividade)*/
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase; /*texto em caixa alta*/
+    padding-bottom: 3rem; /*espaçamento inferior em relação ao titulo*/
+    font-size: 4rem; /*40px*/
+}
+
+.heading span{
+    color: var(--main-text-decoration-color);
+    text-transform: uppercase; /*texto caixa alta*/
+}
+
 .btn{
-    text-decoration: none;
-    color: white;
-    background-color: #da190f;
-    padding: 0.8rem;
-    border-radius: 13px;
+    margin-top: 1rem;
+    padding: 0.9rem 3rem; 
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--main-text-decoration-color);
+    cursor: pointer;
+    display: inline-block; /*deixando a formatação do botão em formato de (bloco)*/
+    border-radius: 1.7rem; 
 }
 
 .btn:hover{
-    
+    letter-spacing: 0.2rem; /*faz que ao pasar o mouse as letras se espalhem*/
+    background-color: #0c0c14;
+    color: white;
+    transition: 1.1s;
+
 }
+
+.row{
+    display: flex; /*defini layout flexivel para os itens*/
+    align-items: center; /*alinhamento dos contúodos ao centro*/
+    background: var(--bg); /*Aplica uma cor de fundo aos elementos*/
+    flex-wrap: wrap; /*permite que os itens quebrem se necessário*/
+    border: var(--border); /*Aplica uma borda ao redor da linha se necessário*/
+}
+
+.row .image{
+    flex: 1 1 45rem; /*Define o tamanho flexível do elemento: 45rem, podendo crescerou encolher, ou seja,
+    faz com que possa ser adptavel para telas grandes e pequenas */
+}
+
+.row .image img{
+ width: 100%; /*faz com que a imagem ocupe toda a largura do cointaner (.image) */
+}
+
+.row .content{
+    flex: 1 1 45rem; /*Defini o tamanho flexível do conteúdo: base 45rem, poderá crescer ou diminuir*/
+    padding: 2rem; /*adiciona espaçamento interno ao redor do conteúdo  */
+}
+
+.row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;/*adiciona espaçamento interno vertical ao texto e as letras zeradas*/
+    line-height: 1.8rem; /*defini o espaçamento entre linhas de um texto*/
+}
+
