@@ -203,9 +203,57 @@ section{
 }
 
 .row .content p{
-    font-size: 1.6rem;
+    font-size: 1.6rem; /*Defini o tamanho da fonte para o paragrafo*/
     color: #ccc;
     padding: 1rem 0;/*adiciona espaçamento interno vertical ao texto e as letras zeradas*/
     line-height: 1.8rem; /*defini o espaçamento entre linhas de um texto*/
 }
 
+.container{
+    display: grid;/*Organiza os elementos internos em um layout de grade*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /*Cria colunas flexiveis com largura mínima de 30rem e máxima proporcional*/
+    gap: 1.5rem; /*Defini o espaçamento interno ao redor do conteúdo da caixa*/
+}
+
+/*estamos estilizando as caixas (pizzas)*/
+.container .box{
+    padding: 5rem;
+    text-align: center; /*centraliza o texto horizontalmente*/
+    border: var(--border); /*aplicando uma borda ao redor da caixa*/
+    background: var(--br-card); /*Defini a cor de fundo da caixa*/
+}
+
+.container .box img{
+    height: 18rem;/*Defini a altura da imagem*/
+    border-radius: 100%; /*tornar a imagem circular*/
+}
+
+.container .box h2{
+    color: #fff; /*aplica a cor branca ao titulo*/
+    font-size: 2rem; /*Defini o tamanho da fonte do titulo*/
+    padding: 1rem 0; /*adiciona espaçamento vertical ao titulo*/
+}
+
+.container .box .price{
+    color: #fff; /*Defini a cor branca para o preço*/
+    font-size: 2.5rem; /*Defini o tamanho do preço*/
+    padding: 0.5rem 0; /*adciona espaçamento vertical ao preço*/
+}
+
+.container .box .price span{
+    font-size: 1.5rem; /*defini o tamanho da fonte para o preço original*/
+    text-decoration: line-through; /*aplica uma linha para indicar o preço riscado*/
+    font-weight: lighter; /*Aplica um peso de fonte mais fino*/
+
+}
+
+.container .box:hover{
+    background: #fff;
+    
+}
+
+
+.container .box:hover>*{
+    color: black; /*Altera a cor dos elementos filhos para preto ao passar o mouse*/
+}
