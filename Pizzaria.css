@@ -410,3 +410,50 @@ section {
     font-size: 1.5rem; /*define o tamanho das fonte*/
     text-transform: lowercase; /*transforma o texto adicional para letras minúsculas*/
 }
+
+
+
+.box .content h3{
+    font-size: 3rem;
+}
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    border: var(--border);
+    text-align: center; /*centraliza os textos*/
+    padding: 3rem 2rem;/*adiciona espaçamento interno nas caixas*/
+}
+
+/*Estilização do paragrafo*/
+.review .box-container .box p{
+    font-size: 1.7rem; /**/
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.review .box-container .box h3{
+    padding: 1rem 0; /**/
+    color: #fff;
+    font-size: 2.2rem;
+
+}
+
+.users{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover; /*Ajusta a imagem para preencher o epaçamento disponivel/*/
+}
+
+.review .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--main-text-decoration-color);
+}
+
+
