@@ -527,9 +527,43 @@ font-size: 2.9rem;
 .social-links a i:hover{
     color: var(--main-text-decoration-color);
     transition: 1.0s;
-}
+}   
 
 .footer-bottom{
+    text-align: center;
+    padding: 1rem 0;
     color: #fff;
+    font-size: 1.6rem;
+    border-top: var(--border);
+    margin-top: 2rem;
     
+}
+
+
+
+@media(max-width: 991px){
+
+html{
+    font-size: 55%;
+}
+
+header{
+    padding: 1.5rem 2rem;
+}
+
+section{
+    padding: 2rem;
+}
+}
+
+
+@media(max-width: 767px){
+    .ul-header{
+        display: none;
+    }
+
+  
+ 
+
+
 }
