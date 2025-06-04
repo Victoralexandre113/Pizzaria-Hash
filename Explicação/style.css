@@ -1,0 +1,43 @@
+/* position Relative 
+ O elemento continua no fluxo normal, mas pode ser motivo em relação a sua original
+ utiliza top, left, right e bottom para ajustar sua posição */
+
+ div{
+    position: relative;
+    top: 10px; /*desce 10px*/
+    left: 10px; /*vai 20px para a direita*/
+ }
+
+ /*position absolute*/
+
+ /*o elemento sai do fluxo normal e é posicionado em relação ao elemento pai com position: relative(ou
+ absolute, fixed*/
+
+ /*Se nenhum pai estiver posicionado será em relação á <body>*/
+ 
+ .container{
+    position: relative;
+ }
+
+ .filho{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+ }
+
+ /*muito usado para sobrepor elementos (como balões de notificação ou botões internos)*/
+
+
+ /*position FIXED*/
+
+ /*o elemento é fixado em relação á janela do navegador  (viewport)
+ mesmo ao rolar a página, ele fica parado no lugar */
+
+ .botao-whats{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: green;
+    
+ }

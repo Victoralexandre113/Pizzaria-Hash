@@ -23,7 +23,7 @@
     transition: 0.2s linear;
     /**/
     outline: none;
-    /**/
+    /*faz com que o site não as sombras de borda ao redor do botão*/
     border: none;
     /*retirando todas as bordas*/
     scroll-behavior: smooth;
@@ -361,209 +361,269 @@ section {
 /* estilizando os icons */
 
 .icons a i {
-    height: 3rem;/*defini a altura dos icones*/
-    width: 3rem; /*largura dos icones*/
-    line-height: 3rem; /*distancia dos conteúdos/altura da linha*/
-    font-size: 1.7rem; /*Defini o tamanho da fonte para icones*/
-    border: var(--border); /*aplica uma borda ao redor dos ícones */
-    color: #fff; /*defini uma cor branca para os icones*/
-    margin: 0.3rem; /*Adiciona espaçamento entre os icones*/
+    height: 3rem;
+    /*defini a altura dos icones*/
+    width: 3rem;
+    /*largura dos icones*/
+    line-height: 3rem;
+    /*distancia dos conteúdos/altura da linha*/
+    font-size: 1.7rem;
+    /*Defini o tamanho da fonte para icones*/
+    border: var(--border);
+    /*aplica uma borda ao redor dos ícones */
+    color: #fff;
+    /*defini uma cor branca para os icones*/
+    margin: 0.3rem;
+    /*Adiciona espaçamento entre os icones*/
 }
 
-.icons a i:hover{
-    background: var(--main-text-decoration-color); /*altera o fundo dos icones para a cor principal */
+.icons a i:hover {
+    background: var(--main-text-decoration-color);
+    /*altera o fundo dos icones para a cor principal */
 }
 
 
-.box .image{
-    padding: 2.5rem; /*adciona espaçamento vertical*/
+.box .image {
+    padding: 2.5rem;
+    /*adciona espaçamento vertical*/
 }
 
-.box .image img{
-    height: 25rem; /*altura das imagens*/
+.box .image img {
+    height: 25rem;
+    /*altura das imagens*/
 }
 
 /*estilização da caixa "content" */
 
-.box .content{
-    color: #fff; /*Defini a cor branca para o conteúdo textual*/
-    font-size: 2.5rem; /*defini o tamanho da fonte do conteúdo */
+.box .content {
+    color: #fff;
+    /*Defini a cor branca para o conteúdo textual*/
+    font-size: 2.5rem;
+    /*defini o tamanho da fonte do conteúdo */
 }
 
-.box .content .stars{
-    padding: 1.5rem; /*adiciona espaçamento ao redor das estrelas*/
+.box .content .stars {
+    padding: 1.5rem;
+    /*adiciona espaçamento ao redor das estrelas*/
 }
 
-.box .content .stars i{
-    font-size: 1.9rem; /*tamahho das estrelas*/
-    color: var(--main-text-decoration-color); /*aplica a cor principal*/
+.box .content .stars i {
+    font-size: 1.9rem;
+    /*tamahho das estrelas*/
+    color: var(--main-text-decoration-color);
+    /*aplica a cor principal*/
 
 }
 
-.box .content .price{
+.box .content .price {
     color: #fff;
     font-size: 2.5rem;
 }
 
-.box .content .price span{
-    font-weight: lighter; /*aplica a fonte mais fina para o texto */
-    font-size: 1.5rem; /*define o tamanho das fonte*/
-    text-transform: lowercase; /*transforma o texto adicional para letras minúsculas*/
+.box .content .price span {
+    font-weight: lighter;
+    /*aplica a fonte mais fina para o texto */
+    font-size: 1.5rem;
+    /*define o tamanho das fonte*/
+    text-transform: lowercase;
+    /*transforma o texto adicional para letras minúsculas*/
 }
 
 
 
-.box .content h3{
+.box .content h3 {
     font-size: 3rem;
 }
 
-.review .box-container{
+.review .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.review .box-container .box{
+.review .box-container .box {
     border: var(--border);
-    text-align: center; /*centraliza os textos*/
-    padding: 3rem 2rem;/*adiciona espaçamento interno nas caixas*/
+    text-align: center;
+    /*centraliza os textos*/
+    padding: 3rem 2rem;
+    /*adiciona espaçamento interno nas caixas*/
 }
 
 /*Estilização do paragrafo*/
-.review .box-container .box p{
-    font-size: 1.7rem; /**/
+.review .box-container .box p {
+    font-size: 1.7rem;
+    /**/
     line-height: 1.8;
     color: #ccc;
     padding: 2rem 0;
 }
 
-.review .box-container .box h3{
-    padding: 1rem 0; /**/
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    /**/
     color: #fff;
     font-size: 2.2rem;
 
 }
 
-.users{
+.users {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
-    object-fit: cover; /*Ajusta a imagem para preencher o epaçamento disponivel/*/
+    object-fit: cover;
+    /*Ajusta a imagem para preencher o epaçamento disponivel/*/
 }
 
-.review .box-container .box .stars i{
+.review .box-container .box .stars i {
     font-size: 1.7rem;
     color: var(--main-text-decoration-color);
 }
 
 /* footer */
 
-.title-footer{
+.title-footer {
     text-align: center;
-    text-transform: uppercase; /*caixa alta*/
-    font-size: 2rem /*20px*/;
+    text-transform: uppercase;
+    /*caixa alta*/
+    font-size: 2rem
+        /*20px*/
+    ;
     color: #fff;
     margin-bottom: 1.5rem;
 }
 
-.title-footer span{
+.title-footer span {
     color: var(--main-text-decoration-color);
     text-transform: uppercase;
 
 }
 
-footer{
+footer {
     background: var(--bg);
     text-align: center;
-    padding: 4rem 0; /*add espaçamento interno vertical ao rodapé*/
+    padding: 4rem 0;
+    /*add espaçamento interno vertical ao rodapé*/
 }
 
 
-footer .container{
+footer .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 7%; /*add espaçamento interno horinzontal usando porcentagem*/
+    padding: 0 7%;
+    /*add espaçamento interno horinzontal usando porcentagem*/
 }
 
 
-.content-1{
-    flex: 1 1 25rem; /*defini tamanho flexivel com largura minima de 25rem*/
-    margin: 1rem; /*add espaçamento ao redor do conteúdo*/
+.content-1 {
+    flex: 1 1 25rem;
+    /*defini tamanho flexivel com largura minima de 25rem*/
+    margin: 1rem;
+    /*add espaçamento ao redor do conteúdo*/
 }
 
-.content-1 ul{
+.content-1 ul {
     list-style: none;
-    padding: 0; /*remove espaçamento interno padrão*/
+    padding: 0;
+    /*remove espaçamento interno padrão*/
 }
 
-.content-1 ul li{
-    margin-bottom: 1rem; /*add espaçamento inferior entre os itens da lista*/
+.content-1 ul li {
+    margin-bottom: 1rem;
+    /*add espaçamento inferior entre os itens da lista*/
 }
 
-.content-1 ul li a{
+.content-1 ul li a {
     color: #ccc;
     text-decoration: none;
     font-size: 1.6rem;
 }
 
 
-.content-1 ul li a:hover{
+.content-1 ul li a:hover {
     color: var(--main-text-decoration-color);
     transition: 0.8s;
 }
 
-.social-links{
+.social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 1.5rem;
 }
-.social-links a i{
-color: white;
-font-size: 2.9rem;
+
+.social-links a i {
+    color: white;
+    font-size: 2.9rem;
 }
 
-.social-links a i:hover{
+.social-links a i:hover {
     color: var(--main-text-decoration-color);
     transition: 1.0s;
-}   
+}
 
-.footer-bottom{
+.footer-bottom {
     text-align: center;
     padding: 1rem 0;
     color: #fff;
     font-size: 1.6rem;
     border-top: var(--border);
     margin-top: 2rem;
-    
+
+}
+
+.botao-whats {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.9rem;
+    background-color: rgba(0, 128, 0, 0.205);
+    color: white;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+
 }
 
 
 
-@media(max-width: 991px){
+@media(max-width: 991px) {
 
-html{
-    font-size: 55%;
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
 }
 
-header{
-    padding: 1.5rem 2rem;
-}
 
-section{
-    padding: 2rem;
-}
-}
-
-
-@media(max-width: 767px){
-    .ul-header{
+@media(max-width: 767px) {
+    .ul-header {
         display: none;
     }
 
-  
- 
+
+    .botao-whats {
+        font-size: 2.5rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: rgba(0, 128, 0, 0.678);
+        bottom: 70px;
+    }
+
+
 
 
 }
